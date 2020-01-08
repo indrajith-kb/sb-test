@@ -1,0 +1,23 @@
+#info.yml file define required meta-data for the theme
+# core: 8.x
+name: 'specbee theme'
+description: 'This sub theme is built for specbee as my assignment'
+type: theme
+base theme: classy
+package: Core
+
+libraries:
+  - sb_test/global-styling
+
+#containers for placing the blocks
+regions:
+  header: 'Header'
+  banner: 'Banner'
+  content: 'Content'
+  footer: 'Footer'
+
+core: '8.x'
+project: 'specbee'
+
+
+
