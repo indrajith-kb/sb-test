@@ -39,33 +39,34 @@ header {
         }
       }
     }
-    .phone-call {
-      padding: 16px 10px 10px 34px;
-      background: $sb-red;
-      color: $white;
-      margin-right: 20px;
-      width: 200px;
-      position: relative;
-      @include typi('link-text');
+
+  }
+  .phone-call {
+    padding: 16px 10px 10px 34px;
+    background: $sb-red;
+    color: $white;
+    margin-right: 20px;
+    width: 200px;
+    position: relative;
+    @include typi('link-text');
+    transition: all ease 0.9s;
+    @include devicebreak(large) {
+      margin-right: 0;
+      //width: 250px;
+    }
+    &:before {
+      @extend .icon;
+      @extend .icon-phone;
+      position: absolute;
+      left: 12px;
       transition: all ease 0.9s;
-      @include devicebreak(large) {
-        margin-right: 0;
-        width: 250px;
-      }
+    }
+    &:hover {
+      padding-left: 10px;
+      transition: all ease 0.9s;
       &:before {
-        @extend .icon;
-        @extend .icon-phone;
-        position: absolute;
-        left: 12px;
+        left: 2px;
         transition: all ease 0.9s;
-      }
-      &:hover {
-        padding-left: 10px;
-        transition: all ease 0.9s;
-        &:before {
-          left: 2px;
-          transition: all ease 0.9s;
-        }
       }
     }
   }

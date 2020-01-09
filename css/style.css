@@ -26,7 +26,7 @@
   font-weight: normal;
   font-style: normal; }
 /* line 1, ../scss/base/_font-icons.scss */
-.icon, ul.menu li.search:before, ul.list li:before, header .header-menu .phone-call:before, .social-media-icons li.facebook, .social-media-icons li.twitter, .social-media-icons li.instagram {
+.icon, ul.menu li.search:before, ul.list li:before, header .phone-call:before, .social-media-icons li.facebook, .social-media-icons li.twitter, .social-media-icons li.instagram {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -66,7 +66,7 @@
   color: #8c95a3; }
 
 /* line 46, ../scss/base/_font-icons.scss */
-.icon-phone:before, header .header-menu .phone-call:before {
+.icon-phone:before, header .phone-call:before {
   content: "\e942"; }
 
 /* line 51, ../scss/base/_font-icons.scss */
@@ -495,50 +495,49 @@ header {
           /* line 36, ../scss/modules/_header.scss */
           header .header-menu .menu li:hover a {
             text-decoration: none; }
-    /* line 42, ../scss/modules/_header.scss */
-    header .header-menu .phone-call {
-      padding: 16px 10px 10px 34px;
-      background: #C8122E;
-      color: #fff;
-      margin-right: 20px;
-      width: 200px;
-      position: relative;
-      font-size: 0.88888889rem;
-      line-height: 16px;
+  /* line 44, ../scss/modules/_header.scss */
+  header .phone-call {
+    padding: 16px 10px 10px 34px;
+    background: #C8122E;
+    color: #fff;
+    margin-right: 20px;
+    width: 200px;
+    position: relative;
+    font-size: 0.88888889rem;
+    line-height: 16px;
+    -webkit-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+    /* Desktop design */ }
+    @media all and (min-width: 768px) {
+      /* line 44, ../scss/modules/_header.scss */
+      header .phone-call {
+        font-size: 0.88888889rem;
+        line-height: 16px; } }
+    @media all and (min-width: 1024px) {
+      /* line 44, ../scss/modules/_header.scss */
+      header .phone-call {
+        font-size: 0.88888889rem;
+        line-height: 16px; } }
+    @media (min-width: 1025px) {
+      /* line 44, ../scss/modules/_header.scss */
+      header .phone-call {
+        margin-right: 0; } }
+    /* line 57, ../scss/modules/_header.scss */
+    header .phone-call:before {
+      position: absolute;
+      left: 12px;
       -webkit-transition: all ease 0.9s;
-      transition: all ease 0.9s;
-      /* Desktop design */ }
-      @media all and (min-width: 768px) {
-        /* line 42, ../scss/modules/_header.scss */
-        header .header-menu .phone-call {
-          font-size: 0.88888889rem;
-          line-height: 16px; } }
-      @media all and (min-width: 1024px) {
-        /* line 42, ../scss/modules/_header.scss */
-        header .header-menu .phone-call {
-          font-size: 0.88888889rem;
-          line-height: 16px; } }
-      @media (min-width: 1025px) {
-        /* line 42, ../scss/modules/_header.scss */
-        header .header-menu .phone-call {
-          margin-right: 0;
-          width: 250px; } }
-      /* line 55, ../scss/modules/_header.scss */
-      header .header-menu .phone-call:before {
-        position: absolute;
-        left: 12px;
+      transition: all ease 0.9s; }
+    /* line 64, ../scss/modules/_header.scss */
+    header .phone-call:hover {
+      padding-left: 10px;
+      -webkit-transition: all ease 0.9s;
+      transition: all ease 0.9s; }
+      /* line 67, ../scss/modules/_header.scss */
+      header .phone-call:hover:before {
+        left: 2px;
         -webkit-transition: all ease 0.9s;
         transition: all ease 0.9s; }
-      /* line 62, ../scss/modules/_header.scss */
-      header .header-menu .phone-call:hover {
-        padding-left: 10px;
-        -webkit-transition: all ease 0.9s;
-        transition: all ease 0.9s; }
-        /* line 65, ../scss/modules/_header.scss */
-        header .header-menu .phone-call:hover:before {
-          left: 2px;
-          -webkit-transition: all ease 0.9s;
-          transition: all ease 0.9s; }
 
 /* line 1, ../scss/modules/_banner.scss */
 .banner-wrapper {
