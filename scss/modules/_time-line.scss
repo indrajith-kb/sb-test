@@ -1,0 +1,24 @@
+.time-line {
+  background: $white;
+  margin-bottom: 30px;
+  @include devicebreak(medium) {
+
+  }
+  @include devicebreak(large) {
+    padding: 20px 30px;
+  }
+  .time-line-head {
+    @include typi('h3heading');
+    font-family: $poppins-semibold;
+    padding-bottom: 10px;
+  }
+  .time-line-text {
+    color: $sb-text-grey;
+  }
+  &:hover {
+    background: $sb-yellow;
+    .time-line-head, .time-line-text {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.banner-wrapper {
+  position: relative;
+
+  .banner-img {
+    img {
+      height: 100%;
+    }
+  }
+  .banner-overlay {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+  .banner-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: $white;
+    opacity: 0.8;
+    .banner-text-wrapper {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .banner-text-head {
+        @include typi('h1heading');
+        font-family: $poppins-semibold;
+        padding-bottom: 20px;
+      }
+      .banner-text-content {
+        @include typi('base');
+        color: $sb-text-grey;
+      }
+    }
+  }
+}

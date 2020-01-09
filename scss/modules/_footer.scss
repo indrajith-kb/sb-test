@@ -1,0 +1,49 @@
+footer {
+  display: block;
+  padding: 30px;
+  color: $sb-text-grey;
+  @include devicebreak(medium) {
+    display: flex;
+    padding: 30px 60px;
+  }
+  @include devicebreak(large) {
+    padding: 30px 120px;
+  }
+  .logo {
+  }
+  .copy-right {
+    padding-left: 0;
+    padding-top: 20px;
+    @include devicebreak(medium) {
+      padding-left: 20px;
+      padding-top: 6px;
+    }
+  }
+  .menu {
+    padding-top: 20px;
+    display: flex;
+    @include devicebreak(medium) {
+      display: flex;
+      padding-top: 6px;
+      padding-left: 12%;
+    }
+    li {
+      a {
+        color: $sb-text-grey;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .social-media-icons {
+    padding-top: 20px;
+    @include devicebreak(medium) {
+      padding-top: 6px;
+      padding-left: 20px;
+    }
+    @include devicebreak(large) {
+      padding-left: 30px;
+    }
+  }
+}

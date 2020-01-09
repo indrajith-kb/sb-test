@@ -1,8 +1,22 @@
 body {
   margin: 0;
   background: $white;
+  @include typi('base');
+  font-family: $poppins-regular;
 }
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+h1 {
+  @include typi('h1heading');
+  font-family: $poppins-semibold;
+}
+h2 {
+  @include typi('h2heading');
+  font-family: $poppins-semibold;
+}
+h3 {
+  @include typi('h3heading');
+  font-family: $poppins-semibold;
 }

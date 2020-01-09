@@ -1,7 +1,46 @@
 header {
   display: flex;
-
+  padding: 30px 20px;
+  .header-logo {
+    flex: 15%;
+  }
   .header-menu {
     display: flex;
+    .menu {
+      position: absolute;
+      background: $sb-grey;
+      right: 0;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      padding: 40px;
+      @include devicebreak(large) {
+        position: relative;
+        background: none;
+        padding: 0 40px 0 0;
+      }
+      li {
+        padding: 10px;
+      }
+    }
+    .phone-call {
+      padding: 16px 10px 10px 34px;
+      background: $sb-red;
+      color: $white;
+      margin-right: 20px;
+      width: 240px;
+      position: relative;
+      @include typi('link-text');
+      @include devicebreak(large) {
+        margin-right: 0;
+      }
+      &:before {
+        @extend .icon;
+        @extend .icon-phone;
+        position: absolute;
+        left: 12px;
+      }
+    }
   }
 }

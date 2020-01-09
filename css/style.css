@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?2h1e8z");
+  src: url("../fonts/font-icons/icomoon.eot?2h1e8z#iefix") format("embedded-opentype"), url("../fonts/font-icons/icomoon.ttf?2h1e8z") format("truetype"), url("../fonts/font-icons/icomoon.woff?2h1e8z") format("woff"), url("../fonts/font-icons/icomoon.svg?2h1e8z#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+@font-face {
   font-family: 'Poppins-Regular';
   src: url("../fonts/Poppins-Regular.eot") format("embedded-opentype"), url("../fonts/Poppins-regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
   font-weight: normal;
@@ -18,9 +25,53 @@
   src: url("../fonts/Poppins-SemiBold.eot") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* line 14, ../scss/base/_variables.scss */
-body {
-  font-family: Poppins-Regular; }
+/* line 1, ../scss/base/_font-icons.scss */
+.icon, ul.menu li.search:before, ul.list li:before, header .header-menu .phone-call:before, .social-media-icons li.facebook, .social-media-icons li.twitter, .social-media-icons li.instagram {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 17, ../scss/base/_font-icons.scss */
+.icon-fb:before, .social-media-icons li.facebook:before {
+  content: "\e900";
+  color: #8c95a3; }
+
+/* line 23, ../scss/base/_font-icons.scss */
+.icon-insta:before, .social-media-icons li.instagram:before {
+  content: "\e901";
+  color: #8c95a3; }
+
+/* line 29, ../scss/base/_font-icons.scss */
+.icon-tick:before, ul.list li:before {
+  content: "\e902";
+  color: #b7e183; }
+
+/* line 34, ../scss/base/_font-icons.scss */
+.icon-tick .path2:before, ul.list li:before .path2:before {
+  content: "\e903";
+  margin-left: -1.349609375em;
+  color: #71de56; }
+
+/* line 40, ../scss/base/_font-icons.scss */
+.icon-twiiter:before, .social-media-icons li.twitter:before {
+  content: "\e904";
+  color: #8c95a3; }
+
+/* line 46, ../scss/base/_font-icons.scss */
+.icon-phone:before, header .header-menu .phone-call:before {
+  content: "\e942"; }
+
+/* line 51, ../scss/base/_font-icons.scss */
+.icon-search:before, ul.menu li.search:before {
+  content: "\e986"; }
 
 /* line 1, ../scss/base/_reset.scss */
 html, body, div, span, object, iframe,
@@ -145,12 +196,70 @@ p {
 /* line 1, ../scss/base/_base.scss */
 body {
   margin: 0;
-  background: #fff; }
+  background: #fff;
+  font-size: 112.5%;
+  font-family: Poppins-Regular; }
+  @media all and (min-width: 768px) {
+    /* line 1, ../scss/base/_base.scss */
+    body {
+      font-size: 112.5%; } }
+  @media all and (min-width: 1024px) {
+    /* line 1, ../scss/base/_base.scss */
+    body {
+      font-size: 112.5%; } }
 
-/* line 5, ../scss/base/_base.scss */
+/* line 7, ../scss/base/_base.scss */
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto; }
+
+/* line 11, ../scss/base/_base.scss */
+h1 {
+  font-size: 2.22222222rem;
+  line-height: 44px;
+  font-family: Poppins-SemiBold; }
+  @media all and (min-width: 768px) {
+    /* line 11, ../scss/base/_base.scss */
+    h1 {
+      font-size: 2.77777778rem;
+      line-height: 54px; } }
+  @media all and (min-width: 1024px) {
+    /* line 11, ../scss/base/_base.scss */
+    h1 {
+      font-size: 3.33333333rem;
+      line-height: 64px; } }
+
+/* line 15, ../scss/base/_base.scss */
+h2 {
+  font-size: 1.77777778rem;
+  line-height: 36px;
+  font-family: Poppins-SemiBold; }
+  @media all and (min-width: 768px) {
+    /* line 15, ../scss/base/_base.scss */
+    h2 {
+      font-size: 2rem;
+      line-height: 40px; } }
+  @media all and (min-width: 1024px) {
+    /* line 15, ../scss/base/_base.scss */
+    h2 {
+      font-size: 2.22222222rem;
+      line-height: 44px; } }
+
+/* line 19, ../scss/base/_base.scss */
+h3 {
+  font-size: 1rem;
+  line-height: 22px;
+  font-family: Poppins-SemiBold; }
+  @media all and (min-width: 768px) {
+    /* line 19, ../scss/base/_base.scss */
+    h3 {
+      font-size: 1rem;
+      line-height: 22px; } }
+  @media all and (min-width: 1024px) {
+    /* line 19, ../scss/base/_base.scss */
+    h3 {
+      font-size: 1rem;
+      line-height: 22px; } }
 
 /* line 2, ../scss/components/_menu.scss */
 ul.menu {
@@ -167,20 +276,53 @@ ul.menu {
   /* line 9, ../scss/components/_menu.scss */
   ul.menu li {
     padding-right: 20px; }
+    /* line 11, ../scss/components/_menu.scss */
+    ul.menu li:last-child {
+      padding-right: 0; }
 
 /* line 2, ../scss/components/_list.scss */
 ul.list {
   list-style: none; }
+  /* line 4, ../scss/components/_list.scss */
+  ul.list li {
+    padding-left: 40px;
+    position: relative; }
+    /* line 7, ../scss/components/_list.scss */
+    ul.list li:before {
+      position: absolute;
+      font-size: 14px;
+      left: 0;
+      top: 8px; }
 
 /* line 1, ../scss/components/_links.scss */
 a {
   text-decoration: none;
-  color: #0A1118; }
+  color: #0A1118;
+  font-size: 0.88888889rem;
+  line-height: 16px; }
+  @media all and (min-width: 768px) {
+    /* line 1, ../scss/components/_links.scss */
+    a {
+      font-size: 0.88888889rem;
+      line-height: 16px; } }
+  @media all and (min-width: 1024px) {
+    /* line 1, ../scss/components/_links.scss */
+    a {
+      font-size: 0.88888889rem;
+      line-height: 16px; } }
 
 /* line 1, ../scss/components/_images.scss */
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
+
+/* line 1, ../scss/components/_button.scss */
+.read-more {
+  padding: 10px 20px;
+  background: #0A1118;
+  color: #fff;
+  display: inline-block; }
 
 /* line 2, ../scss/components/_burger-menu.scss */
 .burger-menu {
@@ -193,12 +335,13 @@ img {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  z-index: 3;
   /* Desktop design */ }
   @media (min-width: 1025px) {
     /* line 2, ../scss/components/_burger-menu.scss */
     .burger-menu {
       display: none; } }
-  /* line 13, ../scss/components/_burger-menu.scss */
+  /* line 14, ../scss/components/_burger-menu.scss */
   .burger-menu span {
     display: block;
     position: absolute;
@@ -211,47 +354,387 @@ img {
     transform: rotate(0deg);
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out; }
-    /* line 29, ../scss/components/_burger-menu.scss */
+    /* line 30, ../scss/components/_burger-menu.scss */
     .burger-menu span:nth-child(1) {
       top: 0px; }
-    /* line 32, ../scss/components/_burger-menu.scss */
+    /* line 33, ../scss/components/_burger-menu.scss */
     .burger-menu span:nth-child(2) {
       top: 8px; }
-    /* line 35, ../scss/components/_burger-menu.scss */
+    /* line 36, ../scss/components/_burger-menu.scss */
     .burger-menu span:nth-child(3) {
       top: 16px; }
-  /* line 41, ../scss/components/_burger-menu.scss */
+  /* line 42, ../scss/components/_burger-menu.scss */
   .burger-menu.open span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%; }
-  /* line 46, ../scss/components/_burger-menu.scss */
+  /* line 47, ../scss/components/_burger-menu.scss */
   .burger-menu.open span:nth-child(2) {
     top: 8px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
-  /* line 50, ../scss/components/_burger-menu.scss */
+  /* line 51, ../scss/components/_burger-menu.scss */
   .burger-menu.open span:nth-child(3) {
     top: 8px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  /* line 54, ../scss/components/_burger-menu.scss */
+  /* line 55, ../scss/components/_burger-menu.scss */
   .burger-menu.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%; }
+
+/* line 1, ../scss/components/_text.scss */
+.text-head {
+  font-size: 1.77777778rem;
+  line-height: 36px;
+  font-family: Poppins-SemiBold; }
+  @media all and (min-width: 768px) {
+    /* line 1, ../scss/components/_text.scss */
+    .text-head {
+      font-size: 2rem;
+      line-height: 40px; } }
+  @media all and (min-width: 1024px) {
+    /* line 1, ../scss/components/_text.scss */
+    .text-head {
+      font-size: 2.22222222rem;
+      line-height: 44px; } }
+
+/* line 5, ../scss/components/_text.scss */
+.text-content {
+  font-size: 112.5%; }
+  @media all and (min-width: 768px) {
+    /* line 5, ../scss/components/_text.scss */
+    .text-content {
+      font-size: 112.5%; } }
+  @media all and (min-width: 1024px) {
+    /* line 5, ../scss/components/_text.scss */
+    .text-content {
+      font-size: 112.5%; } }
 
 /* line 1, ../scss/modules/_header.scss */
 header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 30px 20px; }
   /* line 4, ../scss/modules/_header.scss */
+  header .header-logo {
+    -webkit-box-flex: 15%;
+    -webkit-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%; }
+  /* line 7, ../scss/modules/_header.scss */
   header .header-menu {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    /* line 9, ../scss/modules/_header.scss */
+    header .header-menu .menu {
+      position: absolute;
+      background: #F4F4F4;
+      right: 0;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      padding: 40px;
+      /* Desktop design */ }
+      @media (min-width: 1025px) {
+        /* line 9, ../scss/modules/_header.scss */
+        header .header-menu .menu {
+          position: relative;
+          background: none;
+          padding: 0 40px 0 0; } }
+      /* line 23, ../scss/modules/_header.scss */
+      header .header-menu .menu li {
+        padding: 10px; }
+    /* line 27, ../scss/modules/_header.scss */
+    header .header-menu .phone-call {
+      padding: 16px 10px 10px 34px;
+      background: #C8122E;
+      color: #fff;
+      margin-right: 20px;
+      width: 240px;
+      position: relative;
+      font-size: 0.88888889rem;
+      line-height: 16px;
+      /* Desktop design */ }
+      @media all and (min-width: 768px) {
+        /* line 27, ../scss/modules/_header.scss */
+        header .header-menu .phone-call {
+          font-size: 0.88888889rem;
+          line-height: 16px; } }
+      @media all and (min-width: 1024px) {
+        /* line 27, ../scss/modules/_header.scss */
+        header .header-menu .phone-call {
+          font-size: 0.88888889rem;
+          line-height: 16px; } }
+      @media (min-width: 1025px) {
+        /* line 27, ../scss/modules/_header.scss */
+        header .header-menu .phone-call {
+          margin-right: 0; } }
+      /* line 38, ../scss/modules/_header.scss */
+      header .header-menu .phone-call:before {
+        position: absolute;
+        left: 12px; }
+
+/* line 1, ../scss/modules/_banner.scss */
+.banner-wrapper {
+  position: relative; }
+  /* line 5, ../scss/modules/_banner.scss */
+  .banner-wrapper .banner-img img {
+    height: 100%; }
+  /* line 9, ../scss/modules/_banner.scss */
+  .banner-wrapper .banner-overlay {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0; }
+    /* line 15, ../scss/modules/_banner.scss */
+    .banner-wrapper .banner-overlay img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  /* line 22, ../scss/modules/_banner.scss */
+  .banner-wrapper .banner-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    opacity: 0.8; }
+    /* line 29, ../scss/modules/_banner.scss */
+    .banner-wrapper .banner-text .banner-text-wrapper {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      /* line 33, ../scss/modules/_banner.scss */
+      .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
+        font-size: 2.22222222rem;
+        line-height: 44px;
+        font-family: Poppins-SemiBold;
+        padding-bottom: 20px; }
+        @media all and (min-width: 768px) {
+          /* line 33, ../scss/modules/_banner.scss */
+          .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
+            font-size: 2.77777778rem;
+            line-height: 54px; } }
+        @media all and (min-width: 1024px) {
+          /* line 33, ../scss/modules/_banner.scss */
+          .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
+            font-size: 3.33333333rem;
+            line-height: 64px; } }
+      /* line 38, ../scss/modules/_banner.scss */
+      .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
+        font-size: 112.5%;
+        color: #b7bec8; }
+        @media all and (min-width: 768px) {
+          /* line 38, ../scss/modules/_banner.scss */
+          .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
+            font-size: 112.5%; } }
+        @media all and (min-width: 1024px) {
+          /* line 38, ../scss/modules/_banner.scss */
+          .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
+            font-size: 112.5%; } }
+
+/* line 1, ../scss/modules/_block-content.scss */
+.content-block {
+  display: block;
+  /* tablet design */ }
+  @media (min-width: 768px) {
+    /* line 1, ../scss/modules/_block-content.scss */
+    .content-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  /* line 6, ../scss/modules/_block-content.scss */
+  .content-block .content-block-left,
+  .content-block .content-block-right {
+    padding: 30px;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    /* tablet design */
+    /* Desktop design */ }
+    @media (min-width: 768px) {
+      /* line 6, ../scss/modules/_block-content.scss */
+      .content-block .content-block-left,
+      .content-block .content-block-right {
+        -webkit-box-flex: 50%;
+        -webkit-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
+        padding: 60px; } }
+    @media (min-width: 1025px) {
+      /* line 6, ../scss/modules/_block-content.scss */
+      .content-block .content-block-left,
+      .content-block .content-block-right {
+        padding: 120px; } }
+    /* line 18, ../scss/modules/_block-content.scss */
+    .content-block .content-block-left .content .text-head,
+    .content-block .content-block-right .content .text-head {
+      padding-bottom: 30px; }
+    /* line 21, ../scss/modules/_block-content.scss */
+    .content-block .content-block-left .content .text-content,
+    .content-block .content-block-right .content .text-content {
+      color: #b7bec8; }
+    /* line 25, ../scss/modules/_block-content.scss */
+    .content-block .content-block-left img,
+    .content-block .content-block-right img {
+      width: 100%; }
+  /* line 29, ../scss/modules/_block-content.scss */
+  .content-block .content-block-right {
+    padding: 30px;
+    /* tablet design */
+    /* Desktop design */ }
+    @media (min-width: 768px) {
+      /* line 29, ../scss/modules/_block-content.scss */
+      .content-block .content-block-right {
+        padding: 60px 60px 60px 0; } }
+    @media (min-width: 1025px) {
+      /* line 29, ../scss/modules/_block-content.scss */
+      .content-block .content-block-right {
+        padding: 120px 120px 120px 0px; } }
+  /* line 38, ../scss/modules/_block-content.scss */
+  .content-block.white-bg {
+    background: #fff;
+    /* Desktop design */ }
+  /* line 45, ../scss/modules/_block-content.scss */
+  .content-block.grey-bg {
+    background: #F4F4F4; }
+  /* line 48, ../scss/modules/_block-content.scss */
+  .content-block.black-bg {
+    background: #0A1118; }
+    /* line 50, ../scss/modules/_block-content.scss */
+    .content-block.black-bg .content-block-left {
+      color: #fff; }
+      /* line 52, ../scss/modules/_block-content.scss */
+      .content-block.black-bg .content-block-left .list {
+        color: #b7bec8; }
+    /* line 56, ../scss/modules/_block-content.scss */
+    .content-block.black-bg .content-block-right {
+      padding: 0;
+      background-image: url("../images/02.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      /* line 61, ../scss/modules/_block-content.scss */
+      .content-block.black-bg .content-block-right .image {
+        display: block;
+        /* tablet design */ }
+        @media (min-width: 768px) {
+          /* line 61, ../scss/modules/_block-content.scss */
+          .content-block.black-bg .content-block-right .image {
+            display: none; } }
+
+/* line 1, ../scss/modules/_time-line.scss */
+.time-line {
+  background: #fff;
+  margin-bottom: 30px;
+  /* tablet design */
+  /* Desktop design */ }
+  @media (min-width: 1025px) {
+    /* line 1, ../scss/modules/_time-line.scss */
+    .time-line {
+      padding: 20px 30px; } }
+  /* line 10, ../scss/modules/_time-line.scss */
+  .time-line .time-line-head {
+    font-size: 1rem;
+    line-height: 22px;
+    font-family: Poppins-SemiBold;
+    padding-bottom: 10px; }
+    @media all and (min-width: 768px) {
+      /* line 10, ../scss/modules/_time-line.scss */
+      .time-line .time-line-head {
+        font-size: 1rem;
+        line-height: 22px; } }
+    @media all and (min-width: 1024px) {
+      /* line 10, ../scss/modules/_time-line.scss */
+      .time-line .time-line-head {
+        font-size: 1rem;
+        line-height: 22px; } }
+  /* line 15, ../scss/modules/_time-line.scss */
+  .time-line .time-line-text {
+    color: #b7bec8; }
+  /* line 18, ../scss/modules/_time-line.scss */
+  .time-line:hover {
+    background: #EDAB5E; }
+    /* line 20, ../scss/modules/_time-line.scss */
+    .time-line:hover .time-line-head, .time-line:hover .time-line-text {
+      color: #fff; }
+
+/* line 1, ../scss/modules/_footer.scss */
+footer {
+  display: block;
+  padding: 30px;
+  color: #b7bec8;
+  /* tablet design */
+  /* Desktop design */ }
+  @media (min-width: 768px) {
+    /* line 1, ../scss/modules/_footer.scss */
+    footer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 30px 60px; } }
+  @media (min-width: 1025px) {
+    /* line 1, ../scss/modules/_footer.scss */
+    footer {
+      padding: 30px 120px; } }
+  /* line 14, ../scss/modules/_footer.scss */
+  footer .copy-right {
+    padding-left: 0;
+    padding-top: 20px;
+    /* tablet design */ }
+    @media (min-width: 768px) {
+      /* line 14, ../scss/modules/_footer.scss */
+      footer .copy-right {
+        padding-left: 20px;
+        padding-top: 6px; } }
+  /* line 22, ../scss/modules/_footer.scss */
+  footer .menu {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* tablet design */ }
+    @media (min-width: 768px) {
+      /* line 22, ../scss/modules/_footer.scss */
+      footer .menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 6px;
+        padding-left: 12%; } }
+    /* line 31, ../scss/modules/_footer.scss */
+    footer .menu li a {
+      color: #b7bec8; }
+      /* line 33, ../scss/modules/_footer.scss */
+      footer .menu li a:hover {
+        text-decoration: none; }
+  /* line 39, ../scss/modules/_footer.scss */
+  footer .social-media-icons {
+    padding-top: 20px;
+    /* tablet design */
+    /* Desktop design */ }
+    @media (min-width: 768px) {
+      /* line 39, ../scss/modules/_footer.scss */
+      footer .social-media-icons {
+        padding-top: 6px;
+        padding-left: 20px; } }
+    @media (min-width: 1025px) {
+      /* line 39, ../scss/modules/_footer.scss */
+      footer .social-media-icons {
+        padding-left: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

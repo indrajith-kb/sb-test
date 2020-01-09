@@ -1,4 +1,5 @@
 a {
   text-decoration: none;
   color: $sb-black;
+  @include typi('link-text');
 }

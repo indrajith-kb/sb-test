@@ -4,6 +4,7 @@ $sb-red : #C8122E;
 $sb-black : #0A1118;
 $sb-yellow : #EDAB5E;
 $sb-grey : #F4F4F4;
+$sb-text-grey : #b7bec8;
 
 //fonts
 $poppins-light : Poppins-Light;
@@ -11,6 +12,4 @@ $poppins-regular : Poppins-Regular;
 $poppins-medium : Poppins-Medium;
 $poppins-semibold : Poppins-SemiBold;
 
-body {
-  font-family: $poppins-regular;
-}
+$icomoon-font-family: "icomoon" !default;

@@ -1,0 +1,7 @@
+.text-head {
+  @include typi('h2heading');
+  font-family: $poppins-semibold;
+}
+.text-content {
+  @include typi('base');
+}

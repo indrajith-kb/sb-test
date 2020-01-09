@@ -1,0 +1,54 @@
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb {
+  &:before {
+    content: "\e900";
+    color: #8c95a3;
+  }
+}
+.icon-insta {
+  &:before {
+    content: "\e901";
+    color: #8c95a3;
+  }
+}
+.icon-tick{
+  &:before {
+    content: "\e902";
+    color: rgb(183, 225, 131);
+  }
+}
+.icon-tick .path2:before {
+  content: "\e903";
+  margin-left: -1.349609375em;
+  color: rgb(113, 222, 86);
+}
+.icon-twiiter {
+  &:before {
+    content: "\e904";
+    color: #8c95a3;
+  }
+}
+.icon-phone {
+  &:before {
+    content: "\e942";
+  }
+}
+.icon-search {
+  &:before {
+    content: "\e986";
+  }
+}

@@ -2,7 +2,16 @@ ul {
   &.list {
     list-style: none;
     li {
-
+      padding-left: 40px;
+      position: relative;
+      &:before {
+        position: absolute;
+        @extend .icon;
+        @extend .icon-tick;
+        font-size: 14px;
+        left: 0;
+        top: 8px;
+      }
     }
   }
 }

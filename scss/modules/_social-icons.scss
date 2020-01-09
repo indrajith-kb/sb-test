@@ -1,0 +1,16 @@
+.social-media-icons {
+  li {
+    &.facebook {
+      @extend .icon;
+      @extend .icon-fb;
+    }
+    &.twitter{
+      @extend .icon;
+      @extend .icon-twiiter;
+    }
+    &.instagram {
+      @extend .icon;
+      @extend .icon-insta;
+    }
+  }
+}

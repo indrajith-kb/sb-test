@@ -1,0 +1,40 @@
+$breakpoints: (
+        small: 768px,
+        large: 1024px
+);
+
+$typi: (
+        base: (
+                null: 18px,
+                small: 18px,
+                large: 18px
+        ),
+        h1heading: (
+                null: (40px,44px),
+                small: (50px,54px),
+                large: (60px,64px)
+        ),
+        h2heading: (
+                null: (32px,36px),
+                small: (36px,40px),
+                large: (40px,44px)
+        ),
+        h3heading: (
+                null: (18px,22px),
+                small: (18px,22px),
+                large: (18px,22px)
+        ),
+        link-text: (
+                null: (16px,16px),
+                small: (16px,16px),
+                large: (16px,16px)
+        )
+
+
+  // Other font maps here
+);
+
+
+
+
+
