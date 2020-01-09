@@ -1,0 +1,16 @@
+$black : #000;
+$white : #fff;
+$sb-red : #C8122E;
+$sb-black : #0A1118;
+$sb-yellow : #EDAB5E;
+$sb-grey : #F4F4F4;
+
+//fonts
+$poppins-light : Poppins-Light;
+$poppins-regular : Poppins-Regular;
+$poppins-medium : Poppins-Medium;
+$poppins-semibold : Poppins-SemiBold;
+
+body {
+  font-family: $poppins-regular;
+}

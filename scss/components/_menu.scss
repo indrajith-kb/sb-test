@@ -1,0 +1,13 @@
+ul {
+  &.menu {
+    list-style: none;
+    display: none;
+    @include devicebreak(large) {
+      display: flex;
+    }
+
+    li {
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  background:transparent;
+  border:0;
+  font-size:100%;
+  margin:0;
+  outline:0;
+  padding:0;
+  vertical-align:baseline;
+}
+body {
+  height:100%;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+nav ul, ul {
+  list-style:none;
+}
+blockquote, q {
+  quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+a {
+  background:transparent;
+  font-size:100%;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  vertical-align:baseline;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+table {
+  border-collapse:inherit;
+  border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+  border:0;
+  border-top:1px solid;
+  display:block;
+  height:1px;
+  margin:1em 0;
+  padding:0;
+}
+input, select {
+  vertical-align:middle;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+img{
+  height:auto;
+  display: block;
+}
+p {
+  margin: 15px 0;
+}
