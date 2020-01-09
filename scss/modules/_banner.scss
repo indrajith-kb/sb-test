@@ -12,6 +12,10 @@
     width: 50%;
     top: 0;
     left: 0;
+    opacity: 0;
+    @include devicebreak(medium) {
+      opacity: 1;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -23,13 +27,23 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background: $white;
     opacity: 0.8;
+    @include devicebreak(medium) {
+      width: 50%;
+    }
     .banner-text-wrapper {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      padding: 0 20px;
+      @include devicebreak(medium) {
+        padding: 0 30px;
+      }
+      @include devicebreak(large) {
+        padding: 0 90px 0 120px ;
+      }
       .banner-text-head {
         @include typi('h1heading');
         font-family: $poppins-semibold;

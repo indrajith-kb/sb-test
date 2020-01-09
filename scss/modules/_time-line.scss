@@ -1,9 +1,8 @@
 .time-line {
   background: $white;
   margin-bottom: 30px;
-  @include devicebreak(medium) {
-
-  }
+  transition: all ease .8s;
+  padding: 20px;
   @include devicebreak(large) {
     padding: 20px 30px;
   }
@@ -17,6 +16,7 @@
   }
   &:hover {
     background: $sb-yellow;
+    transition: all ease .8s;
     .time-line-head, .time-line-text {
       color: $white;
     }

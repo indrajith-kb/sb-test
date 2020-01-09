@@ -3,4 +3,13 @@
   background: $sb-black;
   color: $white;
   display: inline-block;
+  margin-top: 20px;
+  transition: all ease 0.9s;
+  @include devicebreak(large) {
+    margin-top: 30px;
+  }
+  &:hover {
+    transition: all ease 0.9s;
+    padding-left: 12px;
+  }
 }

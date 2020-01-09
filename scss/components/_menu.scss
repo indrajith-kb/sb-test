@@ -12,9 +12,15 @@ ul {
         padding-right: 0;
       }
       &.search {
+        position: relative;
+        display: inline-block;
         &:before {
           @extend .icon;
           @extend .icon-search;
+          position: absolute;
+          left: -10px;
+          top: 18px;
+          font-size: 12px;
         }
       }
 

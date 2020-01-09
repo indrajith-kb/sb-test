@@ -279,6 +279,16 @@ ul.menu {
     /* line 11, ../scss/components/_menu.scss */
     ul.menu li:last-child {
       padding-right: 0; }
+    /* line 14, ../scss/components/_menu.scss */
+    ul.menu li.search {
+      position: relative;
+      display: inline-block; }
+      /* line 17, ../scss/components/_menu.scss */
+      ul.menu li.search:before {
+        position: absolute;
+        left: -10px;
+        top: 18px;
+        font-size: 12px; }
 
 /* line 2, ../scss/components/_list.scss */
 ul.list {
@@ -322,7 +332,20 @@ img {
   padding: 10px 20px;
   background: #0A1118;
   color: #fff;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 20px;
+  -webkit-transition: all ease 0.9s;
+  transition: all ease 0.9s;
+  /* Desktop design */ }
+  @media (min-width: 1025px) {
+    /* line 1, ../scss/components/_button.scss */
+    .read-more {
+      margin-top: 30px; } }
+  /* line 11, ../scss/components/_button.scss */
+  .read-more:hover {
+    -webkit-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+    padding-left: 12px; }
 
 /* line 2, ../scss/components/_burger-menu.scss */
 .burger-menu {
@@ -418,20 +441,25 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 20px; }
-  /* line 4, ../scss/modules/_header.scss */
+  padding: 30px 20px;
+  /* Desktop design */ }
+  @media (min-width: 1025px) {
+    /* line 1, ../scss/modules/_header.scss */
+    header {
+      padding: 30px 20px 30px 120px; } }
+  /* line 7, ../scss/modules/_header.scss */
   header .header-logo {
     -webkit-box-flex: 15%;
     -webkit-flex: 15%;
         -ms-flex: 15%;
             flex: 15%; }
-  /* line 7, ../scss/modules/_header.scss */
+  /* line 10, ../scss/modules/_header.scss */
   header .header-menu {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    /* line 9, ../scss/modules/_header.scss */
+    /* line 12, ../scss/modules/_header.scss */
     header .header-menu .menu {
       position: absolute;
       background: #F4F4F4;
@@ -443,43 +471,69 @@ header {
       padding: 40px;
       /* Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 9, ../scss/modules/_header.scss */
+        /* line 12, ../scss/modules/_header.scss */
         header .header-menu .menu {
           position: relative;
           background: none;
           padding: 0 40px 0 0; } }
-      /* line 23, ../scss/modules/_header.scss */
+      /* line 26, ../scss/modules/_header.scss */
       header .header-menu .menu li {
-        padding: 10px; }
-    /* line 27, ../scss/modules/_header.scss */
+        padding: 10px;
+        -webkit-transition: all ease 0.6s;
+        transition: all ease 0.6s;
+        border-bottom: 2px solid transparent; }
+        /* line 30, ../scss/modules/_header.scss */
+        header .header-menu .menu li:hover {
+          -webkit-transition: all ease 0.6s;
+          transition: all ease 0.6s;
+          border-bottom: 2px solid #EDAB5E; }
+          /* line 33, ../scss/modules/_header.scss */
+          header .header-menu .menu li:hover a {
+            text-decoration: none; }
+    /* line 39, ../scss/modules/_header.scss */
     header .header-menu .phone-call {
       padding: 16px 10px 10px 34px;
       background: #C8122E;
       color: #fff;
       margin-right: 20px;
-      width: 240px;
+      width: 200px;
       position: relative;
       font-size: 0.88888889rem;
       line-height: 16px;
+      -webkit-transition: all ease 0.9s;
+      transition: all ease 0.9s;
       /* Desktop design */ }
       @media all and (min-width: 768px) {
-        /* line 27, ../scss/modules/_header.scss */
+        /* line 39, ../scss/modules/_header.scss */
         header .header-menu .phone-call {
           font-size: 0.88888889rem;
           line-height: 16px; } }
       @media all and (min-width: 1024px) {
-        /* line 27, ../scss/modules/_header.scss */
+        /* line 39, ../scss/modules/_header.scss */
         header .header-menu .phone-call {
           font-size: 0.88888889rem;
           line-height: 16px; } }
       @media (min-width: 1025px) {
-        /* line 27, ../scss/modules/_header.scss */
+        /* line 39, ../scss/modules/_header.scss */
         header .header-menu .phone-call {
-          margin-right: 0; } }
-      /* line 38, ../scss/modules/_header.scss */
+          margin-right: 0;
+          width: 250px; } }
+      /* line 52, ../scss/modules/_header.scss */
       header .header-menu .phone-call:before {
         position: absolute;
-        left: 12px; }
+        left: 12px;
+        -webkit-transition: all ease 0.9s;
+        transition: all ease 0.9s; }
+      /* line 59, ../scss/modules/_header.scss */
+      header .header-menu .phone-call:hover {
+        padding-left: 10px;
+        -webkit-transition: all ease 0.9s;
+        transition: all ease 0.9s; }
+        /* line 62, ../scss/modules/_header.scss */
+        header .header-menu .phone-call:hover:before {
+          left: 2px;
+          -webkit-transition: all ease 0.9s;
+          transition: all ease 0.9s; }
 
 /* line 1, ../scss/modules/_banner.scss */
 .banner-wrapper {
@@ -493,53 +547,75 @@ header {
     height: 100%;
     width: 50%;
     top: 0;
-    left: 0; }
-    /* line 15, ../scss/modules/_banner.scss */
+    left: 0;
+    opacity: 0;
+    /* tablet design */ }
+    @media (min-width: 768px) {
+      /* line 9, ../scss/modules/_banner.scss */
+      .banner-wrapper .banner-overlay {
+        opacity: 1; } }
+    /* line 19, ../scss/modules/_banner.scss */
     .banner-wrapper .banner-overlay img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-  /* line 22, ../scss/modules/_banner.scss */
+  /* line 26, ../scss/modules/_banner.scss */
   .banner-wrapper .banner-text {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background: #fff;
-    opacity: 0.8; }
-    /* line 29, ../scss/modules/_banner.scss */
+    opacity: 0.8;
+    /* tablet design */ }
+    @media (min-width: 768px) {
+      /* line 26, ../scss/modules/_banner.scss */
+      .banner-wrapper .banner-text {
+        width: 50%; } }
+    /* line 36, ../scss/modules/_banner.scss */
     .banner-wrapper .banner-text .banner-text-wrapper {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-      /* line 33, ../scss/modules/_banner.scss */
+              transform: translateY(-50%);
+      padding: 0 20px;
+      /* tablet design */
+      /* Desktop design */ }
+      @media (min-width: 768px) {
+        /* line 36, ../scss/modules/_banner.scss */
+        .banner-wrapper .banner-text .banner-text-wrapper {
+          padding: 0 30px; } }
+      @media (min-width: 1025px) {
+        /* line 36, ../scss/modules/_banner.scss */
+        .banner-wrapper .banner-text .banner-text-wrapper {
+          padding: 0 90px 0 120px; } }
+      /* line 47, ../scss/modules/_banner.scss */
       .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
         font-size: 2.22222222rem;
         line-height: 44px;
         font-family: Poppins-SemiBold;
         padding-bottom: 20px; }
         @media all and (min-width: 768px) {
-          /* line 33, ../scss/modules/_banner.scss */
+          /* line 47, ../scss/modules/_banner.scss */
           .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
             font-size: 2.77777778rem;
             line-height: 54px; } }
         @media all and (min-width: 1024px) {
-          /* line 33, ../scss/modules/_banner.scss */
+          /* line 47, ../scss/modules/_banner.scss */
           .banner-wrapper .banner-text .banner-text-wrapper .banner-text-head {
             font-size: 3.33333333rem;
             line-height: 64px; } }
-      /* line 38, ../scss/modules/_banner.scss */
+      /* line 52, ../scss/modules/_banner.scss */
       .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
         font-size: 112.5%;
         color: #b7bec8; }
         @media all and (min-width: 768px) {
-          /* line 38, ../scss/modules/_banner.scss */
+          /* line 52, ../scss/modules/_banner.scss */
           .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
             font-size: 112.5%; } }
         @media all and (min-width: 1024px) {
-          /* line 38, ../scss/modules/_banner.scss */
+          /* line 52, ../scss/modules/_banner.scss */
           .banner-wrapper .banner-text .banner-text-wrapper .banner-text-content {
             font-size: 112.5%; } }
 
@@ -638,34 +714,38 @@ header {
 .time-line {
   background: #fff;
   margin-bottom: 30px;
-  /* tablet design */
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  padding: 20px;
   /* Desktop design */ }
   @media (min-width: 1025px) {
     /* line 1, ../scss/modules/_time-line.scss */
     .time-line {
       padding: 20px 30px; } }
-  /* line 10, ../scss/modules/_time-line.scss */
+  /* line 9, ../scss/modules/_time-line.scss */
   .time-line .time-line-head {
     font-size: 1rem;
     line-height: 22px;
     font-family: Poppins-SemiBold;
     padding-bottom: 10px; }
     @media all and (min-width: 768px) {
-      /* line 10, ../scss/modules/_time-line.scss */
+      /* line 9, ../scss/modules/_time-line.scss */
       .time-line .time-line-head {
         font-size: 1rem;
         line-height: 22px; } }
     @media all and (min-width: 1024px) {
-      /* line 10, ../scss/modules/_time-line.scss */
+      /* line 9, ../scss/modules/_time-line.scss */
       .time-line .time-line-head {
         font-size: 1rem;
         line-height: 22px; } }
-  /* line 15, ../scss/modules/_time-line.scss */
+  /* line 14, ../scss/modules/_time-line.scss */
   .time-line .time-line-text {
     color: #b7bec8; }
-  /* line 18, ../scss/modules/_time-line.scss */
+  /* line 17, ../scss/modules/_time-line.scss */
   .time-line:hover {
-    background: #EDAB5E; }
+    background: #EDAB5E;
+    -webkit-transition: all ease .8s;
+    transition: all ease .8s; }
     /* line 20, ../scss/modules/_time-line.scss */
     .time-line:hover .time-line-head, .time-line:hover .time-line-text {
       color: #fff; }
@@ -721,19 +801,20 @@ footer {
       color: #b7bec8; }
       /* line 33, ../scss/modules/_footer.scss */
       footer .menu li a:hover {
-        text-decoration: none; }
-  /* line 39, ../scss/modules/_footer.scss */
+        text-decoration: none;
+        color: #0A1118; }
+  /* line 40, ../scss/modules/_footer.scss */
   footer .social-media-icons {
     padding-top: 20px;
     /* tablet design */
     /* Desktop design */ }
     @media (min-width: 768px) {
-      /* line 39, ../scss/modules/_footer.scss */
+      /* line 40, ../scss/modules/_footer.scss */
       footer .social-media-icons {
         padding-top: 6px;
         padding-left: 20px; } }
     @media (min-width: 1025px) {
-      /* line 39, ../scss/modules/_footer.scss */
+      /* line 40, ../scss/modules/_footer.scss */
       footer .social-media-icons {
         padding-left: 30px; } }
 
